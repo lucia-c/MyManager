@@ -1,0 +1,28 @@
+.ProjectItem {
+  text-align: left;
+  border-top: 1px solid #bbbbbb !important;
+  overflow: hidden; }
+  .ProjectItem .ProjectIcon {
+    margin-right: 7px;
+    vertical-align: bottom; }
+  .ProjectItem .DeleteIcon {
+    vertical-align: bottom;
+    color: #9c2a2a !important;
+    float: right; }
+    .ProjectItem .DeleteIcon:hover {
+      color: #ff0000 !important; }
+  .ProjectItem .ProjectDetails {
+    height: 0;
+    max-height: 0;
+    color: #050a2fe0;
+    -webkit-transition: max-height 1s, color .2s;
+    transition: max-height 1s, color .2s;
+    color: transparent; }
+  .ProjectItem > div > div {
+    height: 30px; }
+  .ProjectItem.showDetails .ProjectDetails {
+    height: inherit;
+    max-height: 1000px;
+    color: #050a2fe0; }
+  .ProjectItem.showDetails > div > div {
+    height: inherit; }

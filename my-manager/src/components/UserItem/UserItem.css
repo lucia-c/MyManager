@@ -1,0 +1,12 @@
+.UserItem {
+  text-align: left;
+  border-bottom: 1px solid #bbbbbb;
+  padding: 8px 20px !important; }
+  .UserItem .UserName {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #050a2fe0; }
+  .UserItem .UserIcon {
+    margin-right: 7px;
+    vertical-align: bottom;
+    color: #050a2fe0 !important; }

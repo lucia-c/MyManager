@@ -1,0 +1,38 @@
+.addProjectBox {
+  overflow: hidden; }
+  .addProjectBox .addProjectButton {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #495296e0;
+    cursor: pointer;
+    font-weight: bold; }
+    .addProjectBox .addProjectButton:hover .addIcon {
+      color: #ffffff !important; }
+    .addProjectBox .addProjectButton .addIcon {
+      font-size: 2em !important; }
+  .addProjectBox .addProject {
+    -webkit-transition: max-height 1s, color .7s;
+    transition: max-height 1s, color .7s;
+    height: 0;
+    max-height: 0;
+    padding: 0;
+    text-align: center; }
+    .addProjectBox .addProject .formDate {
+      display: inline-block; }
+      .addProjectBox .addProject .formDate > div {
+        width: 100% !important; }
+    .addProjectBox .addProject .formText {
+      text-align: left; }
+    .addProjectBox .addProject .formText,
+    .addProjectBox .addProject .formDate {
+      width: 50% !important; }
+    .addProjectBox .addProject .clearButton {
+      margin-right: 10px !important; }
+      .addProjectBox .addProject .clearButton:hover:not([disabled]) {
+        background-color: #888888 !important; }
+  .addProjectBox.showAddProject .addProject {
+    height: inherit;
+    max-height: 1000px;
+    padding: 20px; }

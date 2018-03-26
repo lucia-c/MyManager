@@ -1,0 +1,53 @@
+@import "../../_variables.scss";
+.addProjectBox {
+    overflow: hidden;
+    .addProjectButton {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:$secondary-color;
+        cursor: pointer;
+        font-weight: bold;
+        &:hover .addIcon{
+            color:#ffffff!important;
+        }
+        .addIcon{
+            font-size:2em!important;
+        }
+    }
+    .addProject {
+        -webkit-transition: max-height 1s, color .7s;
+        transition: max-height 1s, color .7s;
+        height: 0;
+        max-height: 0;
+        padding: 0;
+        text-align:center;
+        .formDate {
+            display: inline-block;
+            &>div {
+                width: 100%!important;
+            }
+        }
+        .formText {
+            text-align:left;
+        }
+        .formText,
+        .formDate {
+            width: 50%!important;
+        }
+        .clearButton {
+            margin-right: 10px!important;
+            &:hover:not([disabled]) {
+                background-color: #888888!important;
+            }
+        }
+    }
+    &.showAddProject {
+        .addProject {
+            height: inherit;
+            max-height: 1000px;
+            padding: 20px;
+        }
+    }
+}

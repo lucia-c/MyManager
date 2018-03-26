@@ -1,0 +1,39 @@
+@import "../../_variables.scss";
+.ProjectItem {
+    text-align: left;
+    border-top: 1px solid #bbbbbb!important;
+    overflow: hidden;
+    .ProjectIcon {
+        margin-right: 7px;
+        vertical-align: bottom;
+    }
+    .DeleteIcon {
+        vertical-align: bottom;
+        color: #9c2a2a!important;
+        float: right;
+        &:hover {
+            color: #ff0000!important;
+        }
+    }
+    .ProjectDetails {
+        height: 0;
+        max-height: 0;
+        color: $primary-color;
+        -webkit-transition: max-height 1s, color .2s;
+        transition: max-height 1s, color .2s;
+        color: transparent;
+    }
+    &>div>div {
+        height: 30px;
+    }
+    &.showDetails {
+        .ProjectDetails {
+            height: inherit;
+            max-height: 1000px;
+            color: $primary-color;
+        }
+        &>div>div {
+        height: inherit;
+        }
+    }
+}

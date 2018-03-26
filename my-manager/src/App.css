@@ -1,0 +1,35 @@
+.App-logo {
+  height: 80px; }
+
+.App-header {
+  background-color: #050a2fe0;
+  height: 130px;
+  padding: 20px;
+  color: white;
+  text-align: center; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.MainSection {
+  background-color: #050a2fe0;
+  color: #ffffff;
+  text-align: left;
+  padding: 5px 20px;
+  font-weight: normal;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.MainList {
+  padding: 0 !important; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+ul {
+  list-style-type: none; }

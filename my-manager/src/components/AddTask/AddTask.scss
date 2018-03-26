@@ -1,0 +1,60 @@
+@import "../../_variables.scss";
+.addTaskBox {
+    overflow: hidden;
+    .addTaskButton {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:$secondary-color;
+        cursor: pointer;
+        font-weight: bold;
+        &:hover .addIcon{
+            color:#ffffff!important;
+        }
+        .addIcon{
+            font-size:2em!important;
+        }
+    }
+    .addTask {
+        -webkit-transition: max-height 1s, color .7s;
+        transition: max-height 1s, color .7s;
+        height: 0;
+        max-height: 0;
+        padding: 0;
+        text-align:center;
+        .formTime{
+            text-align:left;
+        }
+        .formDate {
+            display: inline-block;
+            &>div {
+                width: 100%!important;
+            }
+        }
+        .formText,
+        .formDate, >div {
+            width: 50%!important;
+            display:inline-block;
+        }
+        .formText {
+            text-align:left;
+        }
+        .formTime{
+            width:100%!important;
+        }
+        .clearButton {
+            margin-right: 10px!important;
+            &:hover:not([disabled]) {
+                background-color: #888888!important;
+            }
+        }
+    }
+    &.showAddTask{
+        .addTask {
+            height: inherit;
+            max-height: 1000px;
+            padding: 20px;
+        }
+    }
+}

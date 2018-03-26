@@ -1,0 +1,43 @@
+.addTaskBox {
+  overflow: hidden; }
+  .addTaskBox .addTaskButton {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #495296e0;
+    cursor: pointer;
+    font-weight: bold; }
+    .addTaskBox .addTaskButton:hover .addIcon {
+      color: #ffffff !important; }
+    .addTaskBox .addTaskButton .addIcon {
+      font-size: 2em !important; }
+  .addTaskBox .addTask {
+    -webkit-transition: max-height 1s, color .7s;
+    transition: max-height 1s, color .7s;
+    height: 0;
+    max-height: 0;
+    padding: 0;
+    text-align: center; }
+    .addTaskBox .addTask .formTime {
+      text-align: left; }
+    .addTaskBox .addTask .formDate {
+      display: inline-block; }
+      .addTaskBox .addTask .formDate > div {
+        width: 100% !important; }
+    .addTaskBox .addTask .formText,
+    .addTaskBox .addTask .formDate, .addTaskBox .addTask > div {
+      width: 50% !important;
+      display: inline-block; }
+    .addTaskBox .addTask .formText {
+      text-align: left; }
+    .addTaskBox .addTask .formTime {
+      width: 100% !important; }
+    .addTaskBox .addTask .clearButton {
+      margin-right: 10px !important; }
+      .addTaskBox .addTask .clearButton:hover:not([disabled]) {
+        background-color: #888888 !important; }
+  .addTaskBox.showAddTask .addTask {
+    height: inherit;
+    max-height: 1000px;
+    padding: 20px; }

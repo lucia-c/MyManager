@@ -1,0 +1,44 @@
+@import "./_variables.scss";
+
+.App-logo {
+  //animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: $primary-color;
+  height: 130px;
+  padding: 20px;
+  color: white;
+  text-align:center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.MainSection{
+  background-color: $primary-color;
+  color: #ffffff;
+  text-align: left;
+  padding: 5px 20px;
+  font-weight: normal;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.MainList{
+  padding:0!important;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+ul{
+  list-style-type: none;
+}
+
